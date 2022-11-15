@@ -1,0 +1,11 @@
+.navbar {
+  height: 2rem;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-shadow: black 2px 2px 2px;
+}
