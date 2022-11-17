@@ -49,6 +49,7 @@ export default function Login() {
               <FormLabel>Email address</FormLabel>
               <Input
                 type="email"
+                value={"foo"}
                 onChange={(e) => setUserNamme(e.target.value)}
               />
             </FormControl>
@@ -56,6 +57,7 @@ export default function Login() {
               <FormLabel>Password</FormLabel>
               <Input
                 type="password"
+                value={"bar"}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </FormControl>
