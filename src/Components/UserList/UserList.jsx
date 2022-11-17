@@ -18,14 +18,14 @@ import {
 import { useEffect, useState } from "react";
 
 export default function UserList() {
+  const { REACT_APP_API_URL } = process.env;
   const [data, setData] = useState([]);
   let [page, setPage] = useState(1);
   useEffect(() => {
     fetchData(page);
-  }, []);
-
+  }, [page]);
   function fetchData(page) {
-    fetch(`https://mock11-api.herokuapp.com/data?_page=${page}&_limit=20`)
+    fetch(`${REACT_APP_API_URL}?_page=${page}&_limit=20`)
       .then((res) => {
         if (res.ok) {
           return res.json();
