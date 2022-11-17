@@ -13,8 +13,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const [usernamme, setUserNamme] = useState("");
-  const [password, setPassword] = useState("");
+  const [usernamme, setUserNamme] = useState("foo");
+  const [password, setPassword] = useState("bar");
   const [isAuth, setisAuth] = useState(false);
   const navigate = useNavigate();
   const handelLogin = () => {
@@ -49,7 +49,7 @@ export default function Login() {
               <FormLabel>Email address</FormLabel>
               <Input
                 type="email"
-                value={"foo"}
+                value={usernamme}
                 onChange={(e) => setUserNamme(e.target.value)}
               />
             </FormControl>
@@ -57,7 +57,7 @@ export default function Login() {
               <FormLabel>Password</FormLabel>
               <Input
                 type="password"
-                value={"bar"}
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </FormControl>
