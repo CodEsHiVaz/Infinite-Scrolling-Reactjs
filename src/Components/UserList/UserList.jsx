@@ -94,14 +94,14 @@ export default function UserList() {
                       <Tr key={i}>
                         <Td className="text-start align-middle">{i + 1}</Td>
                         <Td className="text-start align-middle">
-                          {itm.user_name}
+                          {itm.username}
                         </Td>
                         <Td>
                           <Image
                             borderRadius={"full"}
                             border={"1px solid black"}
-                            src={itm.avtar}
-                            alt={`${itm.user_name}s avtar`}
+                            src={itm.avatar}
+                            alt={`${itm.username}s avtar`}
                           />
                         </Td>
                       </Tr>
